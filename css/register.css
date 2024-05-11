@@ -166,3 +166,30 @@ button {
   border-radius: 5px;
 }
 
+.terms,
+.valid-password {
+  font-size: 0.85rem;
+  color: #707070;
+}
+
+.valid-password > div {
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+
+.pass-input:focus {
+  margin-bottom: 10px;
+}
+
+.valid-password {
+  display: none;
+  transition: all 1s;
+}
+
+.invalid{
+  color: red;
+}
+
+.valid{
+  color: green;
+}
