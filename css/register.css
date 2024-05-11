@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
 
 body {
@@ -11,6 +10,8 @@ body {
   --primary: #5468ff;
   --secondary: #378ce7;
   --tertiary: #dff5ff;
+  --startColor: hsl(0, 100%, 75%);
+  --stopColor: hsl(0, 100%, 75%);
 }
 
 .main {
@@ -31,9 +32,11 @@ body {
 }
 
 .right {
-  background-color: var(--tertiary);
-  padding: 3%;
+  /* background-color: var(--tertiary); */
+  padding: 3% 3% 3% calc(3% + 15px);
+
   height: 100%;
+  backdrop-filter: blur(4px);
 }
 
 .welcome-head {
@@ -102,15 +105,14 @@ footer {
   bottom: 0;
   right: 0px;
   border-radius: 2px;
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(4px);
-  /* border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
 .waves {
   position: absolute;
   right: -25px;
   top: -10px;
+  z-index: 5;
 }
 
 .wave {
@@ -128,3 +130,39 @@ footer {
 .wave:nth-child(2n + 1) {
   background: #5468ff;
 }
+
+.sign-up-text {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+label {
+  font-size: 0.85rem;
+}
+
+.right-content-form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0 15px;
+}
+
+button {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: var(--primary);
+  color: white;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+

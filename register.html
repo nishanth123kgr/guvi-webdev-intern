@@ -7,6 +7,7 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/fontawesome.css">
   </head>
   <body class="d-flex content-center items-center m-0 p-0 overflow-hidden">
     <div class="main d-flex position-fixed">
@@ -59,63 +60,48 @@
         </div>
       </div>
       <div class="right d-flex">
-        <div class="right-content d-flex flex-column justify-content-between h-100">
-          <div class="right-content-header">
-            <span class="fs-5">Create an account</span>
-            <span class="fs-6">Already have an account? <a href="login.html">Login</a></span>
+        <div class="right-content d-flex flex-column h-100 w-100">
+          <div class="right-content-header position-relative">
+            <span class="sign-up-text">Sign Up</span>
+            <div class="text-muted fs-6 mt-2">Already have an account? <a href="login.html">Login</a></div>
           </div>
-          <div class="right-content-form">
-            <form id="register-form" class="d-flex flex-column">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  name="password"
-                  placeholder="Enter your password"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="confirm-password"
-                  name="confirm-password"
-                  placeholder="Confirm your password"
-                  required
-                />
-              </div>
-              <button type="submit" class="btn btn-primary">Register</button>
-            </form>
+          <div class="right-content-form w-100 p-4">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+            />
+            <label for="password">Password</label>
+            <div class="position-relative">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+            /><i class="fa-solid fa-eye fa-lg pass-toggle position-absolute end-0 translate-middle top-50" style="color: #707070; cursor:pointer;"></i>
+          </div>
+            <label for="mobile">Mobile Number</label>
+            <input
+              type="text"
+              id="mobile"
+              name="mobile"
+              class="form-control"
+            />
+            <button class="submit">Sign Up</button>
+
           </div>
         </div>
       </div>
     </div>
-    <script src="./js/register.js"></script>
+    <script src="./js/register.js" type="module"></script>
   </body>
 </html>
