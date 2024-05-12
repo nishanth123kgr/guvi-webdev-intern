@@ -44,7 +44,7 @@ function validatePassword() {
         });
     }
 
-    const passwordErrorItems = passwordValidation.children[0].children;
+    const passwordErrorItems = passwordValidation.children[0].children[0].children;
     let errors = [0, 0, 0];
     const password = passwordInput.value;
     const passwordPattern = /^(?=.*\d)(?=.*[a-zA-Z]).{6,}$/;
