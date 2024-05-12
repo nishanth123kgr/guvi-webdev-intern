@@ -84,7 +84,7 @@ footer {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  animation: animateCircle 7s ease infinite;
+  animation: animateCircle 7s ease-in-out infinite;
 }
 
 
@@ -99,7 +99,8 @@ footer {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  animation: animateRectangle 7s ease infinite;
+  
+  animation: animateRectangle 7s ease-in-out infinite;
   /* animation-delay: 3s; */
 }
 
@@ -171,14 +172,14 @@ footer {
 
 /* Move waves down */
 @keyframes moveDownWaves {
-  0% {
+  0%, 100% {
     transform: translateY(0);
   }
-  50% {
+  /* 25%, 75% {
     transform: translateY(50vh);
-  }
+  } */
 
-  100% {
+  50% {
     transform: translateY(100vh);
   }
   
@@ -209,7 +210,7 @@ footer {
   right: -25px;
   bottom: -10px;
   z-index: 5;
-  animation: moveDownWaves 20s linear infinite;
+  animation: moveDownWaves 15s ease-in-out infinite;
 
 }
 
@@ -223,6 +224,7 @@ footer {
     rgba(223, 245, 255, 1) 10%,
     rgba(84, 104, 255, 1) 80%
   );
+
 }
 
 .wave:nth-child(2n + 1) {
