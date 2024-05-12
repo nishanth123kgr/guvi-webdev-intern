@@ -71,3 +71,17 @@ function validatePassword() {
 
 
 passwordInput.addEventListener('input', validatePassword);
+
+setInterval(() => {
+    let waves = document.querySelector('.waves');
+
+    let waveList = document.querySelectorAll('.wave');
+    if (waveList.length > 0) {
+        let lastWave = waveList[waveList.length - 1];
+        waves.removeChild(lastWave);
+        waves.insertBefore(lastWave, waves.firstChild);
+    }
+
+    console.log(document.querySelectorAll('.wave').length);
+
+}, 1000);
