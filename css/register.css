@@ -211,7 +211,7 @@ footer {
   right: -25px;
   bottom: -10px;
   z-index: 5;
-  animation: moveDownWaves 15s ease-in-out infinite;
+  animation: moveDownWaves 20s ease-in-out infinite;
 
 }
 
@@ -225,11 +225,15 @@ footer {
     rgba(223, 245, 255, 1) 10%,
     rgba(84, 104, 255, 1) 80%
   );
-
+  
 }
 
 .wave:nth-child(2n + 1) {
   background: #5468ff;
+}
+
+.wave:nth-child(2n) {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .sign-up-text {
