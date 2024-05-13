@@ -324,4 +324,5 @@ label{
 .pass-items{
   background-color: #feeced;
   width: fit-content;
+  transition: all 1s;
 }
