@@ -25,15 +25,15 @@ a{
   position: fixed;
 }
 
-.main > div {
+/* .main > div {
   width: 50%;
-  height: 100%;
-}
+} */
 
 .left {
   background-color: var(--primary);
   padding: 3%;
   height: 100%;
+  width: 60%;
 }
 
 .right {
@@ -41,6 +41,7 @@ a{
   padding: 3% 3% 3% calc(3% + 15px);
   height: 100%;
   backdrop-filter: blur(4px);
+  width: 40%;
 }
 
 .welcome-head {
@@ -56,11 +57,11 @@ a{
   text-align: justify;
   line-height: 1.4rem;
   letter-spacing: 0.05px;
-  padding-right: calc(3%);
+  padding-right: calc(3% + 15px);
 }
 
 footer {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .blob-design-container {
@@ -84,7 +85,7 @@ footer {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  animation: animateCircle 7s ease-in-out infinite;
+  /* animation: animateCircle 7s ease-in-out infinite; */
 }
 
 
@@ -100,7 +101,7 @@ footer {
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   
-  animation: animateRectangle 7s ease-in-out infinite;
+  /* animation: animateRectangle 7s ease-in-out infinite; */
   /* animation-delay: 3s; */
 }
 
@@ -114,7 +115,7 @@ footer {
   bottom: 0;
   right: 0px;
   border-radius: 2px;
-  /* animation: animateTriangle 7s ease infinite; */
+  /* animation: animateTriangle 7s ease-in-out infinite; */
 }
 
 @keyframes animateCircle {
@@ -153,7 +154,7 @@ footer {
 
 
 @keyframes animateTriangle {
-  0%, 100% {
+  0% {
     transform: rotate(0deg);
   }
   25% {
