@@ -10,8 +10,7 @@ body {
   --primary: #5468ff;
   --secondary: #378ce7;
   --tertiary: #dff5ff;
-  --startColor: hsl(0, 100%, 75%);
-  --stopColor: hsl(0, 100%, 75%);
+
 }
 
 a{
@@ -241,10 +240,6 @@ footer {
   font-size: 1.6rem;
 }
 
-label {
-  font-size: 0.85rem;
-}
-
 .right-content-form {
   margin-top: 20px;
   width: 100%;
@@ -318,6 +313,8 @@ label{
   position: relative;
   left: 0;
   width: 70%;
+  font-size: 0.85rem;
+
 }
 
 .terms{

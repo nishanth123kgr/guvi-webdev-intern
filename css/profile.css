@@ -4,6 +4,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
+  background-color: #f6f6f9;
 }
 
 :root {
@@ -12,11 +13,104 @@ body {
   --tertiary: #dff5ff;
 }
 
-.bg-container{
-    background: var(--primary);
-    width: 100%;
-    height: 40%;
-    position: fixed;
-    border-radius: 0 0 30px 30px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+.nav-container {
+  border-bottom: #5468ff 2px solid;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-container {
+  width: 80%;
+  
+}
+
+
+.profile-container .profile-picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  
+}
+
+.profile-container .profile-picture {
+  margin-top: -115px;
+  
+}
+
+.edit-profile {
+  background-color: var(--primary);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: max-content;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.details > div {
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.detail-title {
+  font-size: 0.8rem;
+  color: #707070;
+}
+
+.top {
+  background-color: var(--primary);
+  height: 150px;
+  background-size: 40px 40px;
+  background-image: radial-gradient(circle, #f6f6f9 2px, rgba(0, 0, 0, 0) 1px);
+
+}
+
+.modal-header{
+  border-bottom: #5468ff 2px solid;
+}
+
+.modal-footer{
+  border-top: #5468ff 2px solid;
+}
+
+label{
+  text-align: start;
+  position: relative;
+  left: 0;
+  width: 100%;
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+
+}
+
+.form-control{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
 }
