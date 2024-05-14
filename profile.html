@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/profile.css" />
     <link rel="stylesheet" href="css/fontawesome.css" />
   </head>
-  <body class="d-flex m-0 p-0 overflow-hidden flex-column align-items-center">
+  <body class="d-flex m-0 p-0 overflow-x-hidden flex-column align-items-center">
     <nav class="w-100">
       <div
         class="nav-container d-flex w-100 justify-content-between align-items-center py-3 px-4"
@@ -32,26 +32,28 @@
 
     <div class="profile-container d-flex">
       <div
-        class="profile-card d-flex flex-column w-100 bg-white rounded shadow-sm mt-5 overflow-hidden"
+        class="profile-card d-flex flex-column w-100 bg-white rounded shadow-sm mt-5"
       >
-        <div class="top"></div>
-        <div class="p-5">
+        <div class="top rounded-top"></div>
+        <div class="p-5 position-relative">
           <div class="profile-picture mb-3">
             <img src="/assets/images/profile.jpg" alt="profile" />
           </div>
-          <div class="d-flex w-100 justify-content-between">
-            <div>
+          <div class="d-flex w-100 name-email-edit-container ">
+            <div class="name-container ">
               <div class="profile-name fs-4 text-bolder">Nishanth R</div>
               <div class="profile-email fs-6 mt-1">
                 nishanth123kgr@gmail.com
               </div>
             </div>
-            <div
-              class="edit-profile btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#editProfileModal"
-            >
-              <i class="fa-pen fas"></i>
+            <div class="position-absolute top-0 end-0 mt-3 mx-3">
+              <div
+                class="edit-profile btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#editProfileModal"
+              >
+                <i class="fa-pen fas"></i>
+              </div>
             </div>
           </div>
           <div class="details d-flex">
@@ -118,19 +120,9 @@
                 class="form-control"
               />
               <label for="loc">Location</label>
-              <input
-                type="text"
-                id="loc"
-                name="loc"
-                class="form-control"
-              />
+              <input type="text" id="loc" name="loc" class="form-control" />
               <label for="dob">Date of Birth</label>
-              <input
-                type="date"
-                id="dob"
-                name="dob"
-                class="form-control"
-              />
+              <input type="date" id="dob" name="dob" class="form-control" />
               <label for="age">Age</label>
               <input
                 type="number"

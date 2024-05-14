@@ -34,21 +34,17 @@ body {
 
 .profile-container {
   width: 80%;
-  
 }
-
 
 .profile-container .profile-picture img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  
 }
 
 .profile-container .profile-picture {
   margin-top: -115px;
-  
 }
 
 .edit-profile {
@@ -74,6 +70,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-bottom: 15px;
 }
 
 .detail-title {
@@ -86,31 +83,63 @@ body {
   height: 150px;
   background-size: 40px 40px;
   background-image: radial-gradient(circle, #f6f6f9 2px, rgba(0, 0, 0, 0) 1px);
-
 }
 
-.modal-header{
+.modal-header {
   border-bottom: #5468ff 2px solid;
 }
 
-.modal-footer{
+.modal-footer {
   border-top: #5468ff 2px solid;
 }
 
-label{
+label {
   text-align: start;
   position: relative;
   left: 0;
   width: 100%;
   font-size: 0.85rem;
   margin-bottom: 5px;
-
 }
 
-.form-control{
+.form-control {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   margin-bottom: 15px;
+}
+
+.name-email-edit-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .details > div {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .profile-container .profile-picture {
+    text-align: center;
+  }
+
+  .name-email-edit-container {
+    flex-direction: column;
+  }
+
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details {
+    justify-content: center;
+  }
+
+  .form-control {
+    width: 100%;
+  }
 }
