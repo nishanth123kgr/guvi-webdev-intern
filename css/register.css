@@ -325,6 +325,15 @@ label {
   display: none;
 }
 
+.mob-circle{
+  display: none;
+
+}
+
+.mob-rectangle{
+  display: none;
+}
+
 
 @media screen and (max-width: 768px) {
   .left-content{
@@ -342,6 +351,7 @@ label {
     color: #fff!important;
   }
   .mob-circle {
+    display: block;
     width: 90vh;
     height: 90vh;
     border-radius: 50%;
@@ -368,6 +378,7 @@ label {
     display: flex;
   }
   .mob-rectangle{
+    display: block;
     position: absolute;
     width: 200px;
     height: 200px;
@@ -426,7 +437,7 @@ label {
 
   .valid-password {
     position: relative;
-    
+
   }
 
   .blob-design-container {
